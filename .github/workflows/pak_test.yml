@@ -17,12 +17,6 @@ jobs:
         r-version: release
         use-public-rspm: true
 
-    - name: pak lock
-      shell: Rscript {0}
-      run: |
-        install.packages("pak", repos = sprintf("https://r-lib.github.io/p/pak/stable/%s/%s/%s", .Platform$pkgType, R.Version()$os, R.Version()$arch))
-        options(repos = c(
-          CRAN = "https://cloud.r-project.org",
-          PPM = "https://packagemanager.posit.co/cran/latest"
-        ))
-        pak::lockfile_create()
+    - name: install dependencies
+      uses: r-lib/actions/setup-r-dependencies@v2
+      
