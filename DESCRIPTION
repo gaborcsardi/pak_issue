@@ -1,0 +1,33 @@
+Package: xxx
+Title: xxx
+Description: xxx
+URL: https://xxx/
+Version: 0.0.99
+Authors@R: c(
+  person(given = "xxx",
+         family = "xxx",
+         email = "xxx@xx.xx",
+         role = c("aut", "cre")))
+Depends:
+  R (>= 4.3.0)
+Imports:
+    chk,
+    dplyr,
+    glue,
+    googlesheets4,
+    knitr,
+    magrittr,
+    purrr,
+    readr,
+    rlang,
+    stringr,
+    tibble,
+    tidyr
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Suggests: 
+  testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/Needs/website: rmarkdown
