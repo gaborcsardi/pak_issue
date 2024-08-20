@@ -4,3 +4,8 @@ options(repos = c(
 ))
 pak::lockfile_create()
 getOption("repos")
+
+options(repos = c(
+  CRAN = "https://cloud.r-project.org"
+))
+pak::lockfile_create()
